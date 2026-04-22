@@ -15,7 +15,7 @@ resource "aws_vpc" "my-vpc" {
   tags = {
     Name ="my_vpc"
   }
-  
+
 }
 resource "aws_subnet" "private-subnet" {
   cidr_block = "10.0.1.0/24"
