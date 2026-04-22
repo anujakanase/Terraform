@@ -7,10 +7,14 @@ Instead of manually creating resources, Terraform enables:
 3) Consistent environments across development, staging, and production
 
 ⚙️ How Terraform Works
+
 Terraform follows a simple workflow:
 . Write Configuration – Define infrastructure in .tf files
+
 . Initialize – Download required providers using terraform init
+
 . Plan – Preview changes using terraform plan
+
 . Apply – Create/update resources using terraform apply
 
 🔐 State Management
@@ -20,17 +24,25 @@ S3 (for storage)
 DynamoDB (for state locking)
 
 This prevents:
-State conflicts
-Concurrent modification issues
+
+1) State conflicts
+
+2) Concurrent modification issues
 
 ## 🏗️ Architecture Overview
 
 🌐 VPC with CIDR block
+
 🔀 Public & Private Subnets across multiple AZs
+
 🌍 Internet Gateway & NAT Gateway
+
 🛡️ Security Groups (restricted access)
+
 🖥️ EC2 Instances (application layer)
+
 ⚖️ Application Load Balancer (ALB)
+
 📦 S3 Backend for remote state
 
 ## ⚙️ Prerequisites
