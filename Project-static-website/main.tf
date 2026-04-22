@@ -19,7 +19,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "mywebapp-bucket" {
     bucket = "mywebapp-bucket-${random_id.rand_id.hex}"
-  
+ 
 }
 resource "aws_s3_bucket_public_access_block" "example" {
   bucket = aws_s3_bucket.mywebapp-bucket.id
