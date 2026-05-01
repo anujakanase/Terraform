@@ -62,7 +62,7 @@ aws configure
 
 1️⃣ Clone Repository
 git clone https://origin https://github.com/anujakanase/Terraform.
-cd terraform-aws-infra
+cd terraform
 2️⃣ Initialize Terraform
 terraform init
 3️⃣ Validate
